@@ -12,10 +12,10 @@ const Steps = () => {
       sx={{
         position: "absolute",
         zIndex: 1,
-        width: "33vw",
-        height: "33vw",
-        right: "3.5vw",
-        top: "-4.5vw",
+        width: "38vw",
+        height: "35vw",
+        right: "2.2vw",
+        top: "-3.5vw",
       }}
     />
   );

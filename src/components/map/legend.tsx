@@ -26,7 +26,7 @@ const Legend = () => {
         flexDirection: "column",
       }}
     >
-      <Typography fontSize={"2.2vh"} color={"#CD5557"}>
+      <Typography fontSize={"3.4vh"} color={"#CD5557"} fontFamily={"Crushed"}>
         LEYENDA MAPA
       </Typography>
       <Box

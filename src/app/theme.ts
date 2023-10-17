@@ -6,7 +6,7 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   typography: {
     allVariants: { color: "white" },
-    fontFamily: "Inter",
+    fontFamily: "Inter, Crushed",
     fontSize: 16,
   },
 });
