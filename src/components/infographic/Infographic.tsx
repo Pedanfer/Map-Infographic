@@ -2,8 +2,9 @@
 import Box from "@mui/material/Box";
 import React from "react";
 import Steps from "./steps";
-import CenterLegend from "./CenterLegend/CenterLegend.tsx";
+import CenterInfoRow from "./CenterInfoRow/CenterInfoRow.tsx";
 import { Stack, Typography } from "@mui/material";
+import TopInfoRow from "./TopInfoRow/TopInfoRow.tsx";
 
 export const Infographic = (props) => {
   return (
@@ -58,35 +59,8 @@ export const Infographic = (props) => {
           ¿CUÁNTAS PERSONAS HAY ACTUALMENTE EN EL PARQUE?
         </Typography>
       </Stack>
-      <Stack
-        sx={{
-          width: "40%",
-          position: "absolute",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "row",
-          gap: "7%",
-          top: "8%",
-        }}
-      >
-        <Typography
-          sx={{ fontSize: "1.75vw", color: "#8DE3DE", fontFamily: "Crushed" }}
-        >
-          2
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: "1.2vw",
-            color: "#8DE3DE",
-            fontFamily: "Crushed",
-            ml: "7%",
-          }}
-        >
-          ¿QUÉ DIFERENCIA CLIMÁTICA HAY?
-        </Typography>
-      </Stack>
-      <CenterLegend />
+      <TopInfoRow />
+      <CenterInfoRow />
       <Steps />
       {props.children}
     </Box>

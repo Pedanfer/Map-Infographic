@@ -7,7 +7,7 @@ import SvgIcon from "@mui/material/SvgIcon";
 import { Stack, Typography } from "@mui/material";
 import WaterInfoCircle from "./WaterInfoCircle";
 
-const CenterLegend = () => {
+const CenterInfoRow = () => {
   return (
     <Stack
       sx={{
@@ -62,7 +62,7 @@ const CenterLegend = () => {
           right: "1%",
           mb: "3%",
           gap: "8%",
-          bottom: "3%",
+          bottom: "2.3%",
         }}
       >
         <WaterInfoCircle
@@ -112,4 +112,4 @@ const CenterLegend = () => {
   );
 };
 
-export default CenterLegend;
+export default CenterInfoRow;

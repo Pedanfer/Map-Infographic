@@ -8,6 +8,7 @@ const theme = createTheme({
     allVariants: { color: "white" },
     fontFamily: "Inter, Crushed",
     fontSize: 16,
+    fontWeightRegular: 700,
   },
 });
 
