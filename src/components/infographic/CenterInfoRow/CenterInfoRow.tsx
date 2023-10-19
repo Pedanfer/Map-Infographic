@@ -31,12 +31,12 @@ const CenterInfoRow = () => {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.75vw", color: "#8DE3DE", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.75vw", color: "secondary", fontFamily: "Crushed" }}
         >
           3
         </Typography>
         <Typography
-          sx={{ fontSize: "1.2vw", color: "#8DE3DE", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.2vw", color: "secondary", fontFamily: "Crushed" }}
         >
           DESCUBRE LA ECOLOGÍA DE LA LAGUNA
         </Typography>

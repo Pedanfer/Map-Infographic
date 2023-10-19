@@ -43,14 +43,14 @@ export const Infographic = (props) => {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.75vw", color: "#8DE3DE", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.75vw", color: "secondary", fontFamily: "Crushed" }}
         >
           1
         </Typography>
         <Typography
           sx={{
             fontSize: "1.2vw",
-            color: "#8DE3DE",
+            color: "secondary",
             fontFamily: "Crushed",
             ml: "7%",
             textAlign: "center",
