@@ -28,15 +28,16 @@ const TopInfoRow = () => {
         }}
       >
         <Typography
+          fontFamily={"crushed"}
           color="secondary"
-          sx={{ fontSize: "1.75vw", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.65vw" }}
         >
           2
         </Typography>
         <Typography
           color="secondary"
           sx={{
-            fontSize: "1.2vw",
+            fontSize: "1.1vw",
             fontFamily: "Crushed",
             ml: "7%",
           }}
@@ -57,8 +58,21 @@ const TopInfoRow = () => {
         }}
       >
         <NoiseInfoBubble isLagoon={true} value={"150"} noiseLevel={150} />
-        <TemperatureInfoCircle title={"LAGUNA"} icon={Lagoon} value={"25 °C"} />
-        <TemperatureInfoCircle title={"CIUDAD"} icon={City} value={"35 °C"} />
+        <Stack
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
+          <TemperatureInfoCircle
+            title={"LAGUNA"}
+            icon={Lagoon}
+            value={"25 °C"}
+          />
+          <TemperatureInfoCircle title={"CIUDAD"} icon={City} value={"35 °C"} />
+        </Stack>
+
         <NoiseInfoBubble isLagoon={false} value={"70"} noiseLevel={70} />
       </Stack>
     </Stack>

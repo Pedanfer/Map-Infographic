@@ -1,9 +1,9 @@
 import LagoonNoise from "../../../../public/lagoon_noise.svg";
 import CityNoise from "../../../../public/city_noise.svg";
-import Happy from "../../../../public/emotion_happy.svg";
+import Positive from "../../../../public/emotion_positive.svg";
 import Neutral from "../../../../public/emotion_neutral.svg";
-import Sad from "../../../../public/emotion_sad.svg";
-import { Box, Stack, SvgIcon, Typography, makeStyles } from "@mui/material";
+import Negative from "../../../../public/emotion_negative.svg";
+import { Box, Stack, SvgIcon, Typography } from "@mui/material";
 import React from "react";
 
 const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
@@ -54,8 +54,8 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
           }}
         >
           <SvgIcon
-            component={Happy}
-            color={assignNoiseEmote(Happy)}
+            component={Positive}
+            color={assignNoiseEmote(Positive)}
             inheritViewBox
             sx={{
               width: "24%",
@@ -72,8 +72,8 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
             }}
           />
           <SvgIcon
-            color={assignNoiseEmote(Sad)}
-            component={Sad}
+            color={assignNoiseEmote(Negative)}
+            component={Negative}
             inheritViewBox
             sx={{
               width: "24%",
@@ -86,10 +86,10 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
   );
 
   function assignNoiseEmote(component) {
-    if (component === Sad && noiseLevel > 120) return "white";
+    if (component === Negative && noiseLevel > 120) return "white";
     else if (component === Neutral && noiseLevel < 120 && noiseLevel > 60)
       return "white";
-    else if (component === Happy && noiseLevel > 30 && noiseLevel < 60)
+    else if (component === Positive && noiseLevel > 30 && noiseLevel < 60)
       return "white";
     return "fadedWhite";
   }

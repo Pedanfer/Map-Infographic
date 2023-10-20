@@ -16,7 +16,7 @@ const LowerInfoRow = () => {
           alignItems: "center",
           width: "30%",
           right: "73%",
-          gap: "10%",
+          gap: "8%",
           top: "64%",
         }}
       >
@@ -41,7 +41,7 @@ const LowerInfoRow = () => {
           alignItems: "center",
           position: "relative",
           top: "20%",
-          left: "7%",
+          left: "3%",
         }}
       >
         <BirdSightInfo name={"swallow"} />

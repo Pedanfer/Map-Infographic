@@ -30,12 +30,16 @@ const CenterInfoRow = () => {
           flexDirection: "row",
         }}
       >
-        <Typography color="secondary" sx={{ fontSize: "1.75vw" }}>
+        <Typography
+          fontFamily={"crushed"}
+          color="secondary"
+          sx={{ fontSize: "1.65vw" }}
+        >
           3
         </Typography>
         <Typography
           color="secondary"
-          sx={{ fontSize: "1.2vw", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.1vw", fontFamily: "Crushed" }}
         >
           DESCUBRE LA ECOLOGÍA DE LA LAGUNA
         </Typography>

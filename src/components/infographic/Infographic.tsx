@@ -6,6 +6,7 @@ import CenterInfoRow from "./CenterInfoRow/CenterInfoRow.tsx";
 import { Stack, Typography } from "@mui/material";
 import TopInfoRow from "./TopInfoRow/TopInfoRow.tsx";
 import LowerInfoRow from "./LowerInfoRow/LowerInfoRow.tsx";
+import LowestInfoRow from "./LowestInfoRow/LowestInfoRow.tsx";
 
 export const Infographic = (props) => {
   return (
@@ -15,9 +16,9 @@ export const Infographic = (props) => {
         position: "absolute",
         zIndex: 1,
         width: "40vw",
-        height: "38vw",
+        height: "40vw",
         borderRadius: "50%",
-        top: "10.5vh",
+        top: "9vh",
         left: "95vh",
         p: "6vh",
         display: "flex",
@@ -40,19 +41,20 @@ export const Infographic = (props) => {
           alignItems: "center",
           flexDirection: "row",
           gap: "6%",
-          top: "-13%",
+          top: "-11%",
         }}
       >
         <Typography
+          fontFamily={"crushed"}
           color="secondary"
-          sx={{ fontSize: "1.75vw", fontFamily: "Crushed" }}
+          sx={{ fontSize: "1.75vw" }}
         >
           1
         </Typography>
         <Typography
           color="secondary"
           sx={{
-            fontSize: "1.2vw",
+            fontSize: "1.1vw",
             fontFamily: "Crushed",
             ml: "7%",
             textAlign: "center",
@@ -64,6 +66,7 @@ export const Infographic = (props) => {
       <TopInfoRow />
       <CenterInfoRow />
       <LowerInfoRow />
+      <LowestInfoRow />
       <Steps />
       {props.children}
     </Box>

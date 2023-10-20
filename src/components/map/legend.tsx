@@ -16,7 +16,7 @@ const Legend = () => {
         zIndex: 1,
         width: "68vh",
         height: "10vh",
-        borderRadius: 4,
+        borderRadius: "3vh",
         top: "2vh",
         left: "3vh",
         p: "6vh",

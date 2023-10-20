@@ -46,6 +46,7 @@ const BirdSightInfo = ({ name }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          ml: "17%",
         }}
       >
         <SvgIcon
@@ -57,9 +58,9 @@ const BirdSightInfo = ({ name }) => {
           component={getBirdIcon(name)}
           inheritViewBox
           sx={{
-            height: "45%",
-            width: "45%",
-            position: "relative",
+            height: "18%",
+            width: "18%",
+            position: "absolute",
           }}
         />
       </Stack>
@@ -82,7 +83,7 @@ const BirdSightInfo = ({ name }) => {
           <SvgIcon
             component={Up}
             inheritViewBox
-            sx={{ width: "10%", height: "10%", mr: "7%" }}
+            sx={{ width: "11%", height: "11%", ml: "4%", mr: "2%" }}
           />
           <Typography fontSize={"1.3vw"}>10</Typography>
           <SvgIcon
