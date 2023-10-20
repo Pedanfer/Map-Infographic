@@ -5,6 +5,7 @@ import Steps from "./steps";
 import CenterInfoRow from "./CenterInfoRow/CenterInfoRow.tsx";
 import { Stack, Typography } from "@mui/material";
 import TopInfoRow from "./TopInfoRow/TopInfoRow.tsx";
+import LowerInfoRow from "./LowerInfoRow/LowerInfoRow.tsx";
 
 export const Infographic = (props) => {
   return (
@@ -43,14 +44,15 @@ export const Infographic = (props) => {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.75vw", color: "secondary", fontFamily: "Crushed" }}
+          color="secondary"
+          sx={{ fontSize: "1.75vw", fontFamily: "Crushed" }}
         >
           1
         </Typography>
         <Typography
+          color="secondary"
           sx={{
             fontSize: "1.2vw",
-            color: "secondary",
             fontFamily: "Crushed",
             ml: "7%",
             textAlign: "center",
@@ -61,6 +63,7 @@ export const Infographic = (props) => {
       </Stack>
       <TopInfoRow />
       <CenterInfoRow />
+      <LowerInfoRow />
       <Steps />
       {props.children}
     </Box>

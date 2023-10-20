@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Svg from "../../../public/logos.svg";
+import Svg from "../../public/logos.svg";
 import { SvgIcon } from "@mui/material";
 
 const Logos = () => {

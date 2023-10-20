@@ -55,7 +55,7 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
         >
           <SvgIcon
             component={Happy}
-            color={assignNoiseEmote("happy")}
+            color={assignNoiseEmote(Happy)}
             inheritViewBox
             sx={{
               width: "24%",
@@ -63,7 +63,7 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
             }}
           />
           <SvgIcon
-            color={assignNoiseEmote("neutral")}
+            color={assignNoiseEmote(Neutral)}
             component={Neutral}
             inheritViewBox
             sx={{
@@ -72,7 +72,7 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
             }}
           />
           <SvgIcon
-            color={assignNoiseEmote("sad")}
+            color={assignNoiseEmote(Sad)}
             component={Sad}
             inheritViewBox
             sx={{
@@ -85,11 +85,11 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
     </Stack>
   );
 
-  function assignNoiseEmote(emotion) {
-    if (emotion === "sad" && noiseLevel > 120) return "white";
-    else if (emotion === "neutral" && noiseLevel < 120 && noiseLevel > 60)
+  function assignNoiseEmote(component) {
+    if (component === Sad && noiseLevel > 120) return "white";
+    else if (component === Neutral && noiseLevel < 120 && noiseLevel > 60)
       return "white";
-    else if (emotion === "happy" && noiseLevel > 30 && noiseLevel < 60)
+    else if (component === Happy && noiseLevel > 30 && noiseLevel < 60)
       return "white";
     return "fadedWhite";
   }

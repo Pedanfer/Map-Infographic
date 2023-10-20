@@ -28,14 +28,15 @@ const TopInfoRow = () => {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.75vw", color: "secondary", fontFamily: "Crushed" }}
+          color="secondary"
+          sx={{ fontSize: "1.75vw", fontFamily: "Crushed" }}
         >
           2
         </Typography>
         <Typography
+          color="secondary"
           sx={{
             fontSize: "1.2vw",
-            color: "secondary",
             fontFamily: "Crushed",
             ml: "7%",
           }}

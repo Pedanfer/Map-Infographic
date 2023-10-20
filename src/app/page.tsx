@@ -6,7 +6,7 @@ import Legend from "@/components/map/legend.tsx";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme.ts";
 import { Metadata } from "next";
-import Logos from "@/components/map/logos.tsx";
+import Logos from "@/components/logos.tsx";
 import { Infographic } from "@/components/infographic/Infographic.tsx";
 
 export const metadata: Metadata = {
