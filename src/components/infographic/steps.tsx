@@ -14,8 +14,8 @@ const Steps = () => {
         zIndex: 1,
         width: "38vw",
         height: "35vw",
-        right: "1.8vw",
-        top: "-3.5vw",
+        right: "2.2vw",
+        top: "-3vw",
       }}
     />
   );

@@ -5,14 +5,14 @@ import SocialInfoBox from "./SocialInfoBox";
 const LowestInfoRow = () => {
   return (
     <Stack
-      spacing={"3%"}
+      spacing={"1%"}
       sx={{
         position: "absolute",
         display: "flex",
         flexDirection: "column",
         justifyItems: "center",
         alignItems: "center",
-        mt: "65%",
+        mt: "67%",
       }}
     >
       <Stack
@@ -39,12 +39,14 @@ const LowestInfoRow = () => {
         </Typography>
       </Stack>
       <Stack
-        gap={"7%"}
+        gap={"4%"}
         sx={{
+          position: "relative",
           display: "flex",
           flexDirection: "row",
           justifyItems: "center",
           alignItems: "center",
+          left: "29%",
         }}
       >
         <SocialInfoBox />

@@ -5,7 +5,7 @@ import Lagoon from "../../../../public/lagoon.svg";
 import City from "../../../../public/city.svg";
 import NoiseInfoBubble from "./NoiseInfoBubble";
 
-const TopInfoRow = () => {
+const SecondInfoRow = () => {
   return (
     <Stack
       sx={{
@@ -79,4 +79,4 @@ const TopInfoRow = () => {
   );
 };
 
-export default TopInfoRow;
+export default SecondInfoRow;

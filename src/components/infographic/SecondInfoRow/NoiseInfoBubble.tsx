@@ -87,9 +87,9 @@ const NoiseInfoBubble = ({ isLagoon, value, noiseLevel }) => {
 
   function assignNoiseEmote(component) {
     if (component === Negative && noiseLevel > 120) return "white";
-    else if (component === Neutral && noiseLevel < 120 && noiseLevel > 60)
+    if (component === Neutral && noiseLevel < 120 && noiseLevel > 60)
       return "white";
-    else if (component === Positive && noiseLevel > 30 && noiseLevel < 60)
+    if (component === Positive && noiseLevel > 30 && noiseLevel < 60)
       return "white";
     return "fadedWhite";
   }

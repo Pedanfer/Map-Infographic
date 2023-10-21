@@ -30,7 +30,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/theme.ts",
-    "src/components/infographic/LowerInfoRow/BirdSightInfo.tsx"
+    "src/components/infographic/FourthInfoRow/BirdSightInfo.tsx"
   ],
   "exclude": ["node_modules"]
 }
